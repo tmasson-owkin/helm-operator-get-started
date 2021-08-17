@@ -8,7 +8,7 @@ metadata:
     fluxcd.io/automated: "true"
     filter.fluxcd.io/chart-image: semver:~0.4
 spec:
-  releaseName: podinfo-prod
+  releaseName: podinfo-prd
   chart:
     git: git@github.com:tmasson-owkin/helm-operator-get-started
     path: charts/podinfo
@@ -17,4 +17,4 @@ spec:
     image:
       repository: stefanprodan/podinfo
       tag: 0.4.11
-    replicaCount: 3
+    replicaCount: 1
